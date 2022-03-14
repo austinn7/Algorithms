@@ -1,2 +1,2 @@
-# Algorithms
-Some of the algorithms I have implemented in both my free time and for school.
+# Psuedocode
+This is the pseudocode branch where I store some possible implementations of different algorithms in pseudocode format.
