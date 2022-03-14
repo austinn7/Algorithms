@@ -1,0 +1,29 @@
+BFS
+int vertex; int count
+queue<int> q
+int level[]
+q.push(startNode)
+vector<bool> visited(matrix.size(), false))
+visited[startNode] = true
+while(!q.empty())
+	vertex = q.front()
+	count++
+	q.pop()
+	for(i=0; i<matrix[vertex].size(); i++)
+		if(matrix[vertex][i] == 1 && (!visitied[i]))
+			q.push(i)
+			visited[i] = true
+			level[i] = level[vertex]+1
+for(i = 0; i < count; i++)   print(i + “->” + level[i])
+
+This algorithm performs Breadth First Search on an adjacency matrix
+starting with the root node. It has a vertex value that keeps track 
+of the current place in the matrix. It begins by creating an empty 
+queue. Then pushes the first node onto the queue and marks all nodes 
+as unvisited minus the start node. It then enters a while loop where 
+each node is searched for connections and eventually popped out of 
+the queue until the matrix has been completely traversed. At the end 
+there is print statement that prints the nodes and their 
+corresponding level. It prints them in the form of (“node->level”). 
+There is a while loop and a nested for loop, thus the time complexity 
+of this algorithm is O(n^2).
